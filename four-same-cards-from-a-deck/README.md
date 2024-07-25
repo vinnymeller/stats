@@ -20,13 +20,13 @@ python sim.py
 Result:
 
 ```
-Total trials: 10000000
+Trials: 20000000
 
-OP (Player 1) had 14 cards 5000848 times (50.01%)
-When OP had 14 cards, OP won 188986 times (3.78%)
+OP (Player 1) had 14 cards 9997461 times (49.987%)
+When OP had 14 cards, OP won 409513 times (4.096%)
 
-OP had 13 cards 4999152 times (49.99%)
-When OP had 13 cards, OP won 135001 times (2.70%)
+OP had 13 cards 10002539 times (50.013%)
+When OP had 13 cards, OP won 293080 times (2.930%)
 
-Anyone won 1220529 times (12.21%)
+Anyone won 2630807 times (13.154%)
 ```

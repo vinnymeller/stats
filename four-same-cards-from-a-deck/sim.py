@@ -3,7 +3,7 @@ from collections import defaultdict
 
 # make the deck
 CARDS = [
-    '2', '2', '2,', '2',
+    '2', '2', '2', '2',
     '3', '3', '3', '3',
     '4', '4', '4', '4',
     '5', '5', '5', '5',
@@ -19,10 +19,11 @@ CARDS = [
     'Joker', 'Joker'
 ]
 assert len(CARDS) == 54, "I messed up the deck"
+assert len(set(CARDS)) == 14, "I messed up the deck"
 
 PLAYERS = 4
 
-TRIALS = 10_000_000
+TRIALS = 20_000_000
 
 player_one_fourteen_cards = 0
 player_one_thirteen_cards = 0
@@ -69,12 +70,12 @@ for _ in range(TRIALS):
 print(f"""
 Total trials: {TRIALS}
 
-OP (Player 1) had 14 cards {player_one_fourteen_cards} times ({(player_one_fourteen_cards / TRIALS) * 100:.2f}%)
-When OP had 14 cards, OP won {player_one_win_with_fourteen} times ({(player_one_win_with_fourteen / player_one_fourteen_cards) * 100:.2f}%)
+OP (Player 1) had 14 cards {player_one_fourteen_cards} times ({(player_one_fourteen_cards / TRIALS) * 100:.3f}%)
+When OP had 14 cards, OP won {player_one_win_with_fourteen} times ({(player_one_win_with_fourteen / player_one_fourteen_cards) * 100:.3f}%)
 
-OP had 13 cards {player_one_thirteen_cards} times ({(player_one_thirteen_cards / TRIALS) * 100:.2f}%)
-When OP had 13 cards, OP won {player_one_win_with_thirteen} times ({(player_one_win_with_thirteen / player_one_thirteen_cards) * 100:.2f}%)
+OP had 13 cards {player_one_thirteen_cards} times ({(player_one_thirteen_cards / TRIALS) * 100:.3f}%)
+When OP had 13 cards, OP won {player_one_win_with_thirteen} times ({(player_one_win_with_thirteen / player_one_thirteen_cards) * 100:.3f}%)
 
-Anyone won {anyone_won} times ({(anyone_won / TRIALS) * 100:.2f}%)
+Anyone won {anyone_won} times ({(anyone_won / TRIALS) * 100:.3f}%)
 """)
 
